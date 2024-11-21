@@ -1,0 +1,62 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#1a1a1a"/>
+  
+  <!-- Circuit Board Pattern -->
+  <path d="M0 100 H800 M0 300 H800 M0 500 H800 M100 0 V600 M300 0 V600 M500 0 V600 M700 0 V600" 
+        stroke="#333" stroke-width="1"/>
+  
+  <!-- Computer -->
+  <rect x="300" y="200" width="200" height="150" fill="#333" stroke="#0f0" stroke-width="2"/>
+  <rect x="320" y="220" width="160" height="90" fill="#000" stroke="#0f0" stroke-width="2"/>
+  <!-- Computer Screen with Binary -->
+  <text x="340" y="270" fill="#0f0" font-family="monospace" font-size="24">
+    01001100
+    <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+  </text>
+  <!-- Keyboard -->
+  <rect x="320" y="320" width="160" height="20" fill="#444" stroke="#0f0" stroke-width="1"/>
+  
+  <!-- Info Boxes and Connecting Lines -->
+  <!-- Top: Binary Base -->
+  <g transform="translate(350,80)">
+    <rect width="100" height="60" rx="10" fill="#000" stroke="#0f0"/>
+    <text x="50" y="35" fill="#0f0" text-anchor="middle" font-size="12">Binary Base</text>
+  </g>
+  <line x1="400" y1="140" x2="400" y2="200" stroke="#0f0" stroke-width="2"/>
+  
+  <!-- Bottom: Data Driven -->
+  <g transform="translate(350,460)">
+    <rect width="100" height="60" rx="10" fill="#000" stroke="#0f0"/>
+    <text x="50" y="35" fill="#0f0" text-anchor="middle" font-size="12">Data-Driven</text>
+  </g>
+  <line x1="400" y1="350" x2="400" y2="460" stroke="#0f0" stroke-width="2"/>
+  
+  <!-- Left: Analog to Digital -->
+  <g transform="translate(100,270)">
+    <rect width="100" height="60" rx="10" fill="#000" stroke="#0f0"/>
+    <text x="50" y="35" fill="#0f0" text-anchor="middle" font-size="12">Analog to Digital</text>
+  </g>
+  <line x1="200" y1="300" x2="300" y2="300" stroke="#0f0" stroke-width="2"/>
+  
+  <!-- Right: Automation -->
+  <g transform="translate(600,270)">
+    <rect width="100" height="60" rx="10" fill="#000" stroke="#0f0"/>
+    <text x="50" y="35" fill="#0f0" text-anchor="middle" font-size="12">Automation</text>
+  </g>
+  <line x1="500" y1="300" x2="600" y2="300" stroke="#0f0" stroke-width="2"/>
+  
+  <!-- Data Flow Animation -->
+  <circle cx="400" cy="180" r="3" fill="#0f0">
+    <animate attributeName="cy" values="180;140;180" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="280" cy="300" r="3" fill="#0f0">
+    <animate attributeName="cx" values="280;240;280" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="520" cy="300" r="3" fill="#0f0">
+    <animate attributeName="cx" values="520;560;520" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="400" cy="420" r="3" fill="#0f0">
+    <animate attributeName="cy" values="420;460;420" dur="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>

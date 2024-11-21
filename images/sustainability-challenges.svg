@@ -1,0 +1,78 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#1a1a1a"/>
+  
+  <!-- Mountain Metaphor -->
+  <path d="M0,500 L300,100 L500,300 L800,200 L800,500 L0,500" fill="#333"/>
+  <path d="M0,500 L300,100 L500,300 L800,200" fill="none" stroke="#0f0" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Climbing Figure -->
+  <g transform="translate(200,400)">
+    <circle cx="0" cy="0" r="10" fill="#0f0"/>
+    <line x1="0" y1="10" x2="0" y2="30" stroke="#0f0" stroke-width="2"/>
+    <line x1="0" y1="15" x2="-15" y2="25" stroke="#0f0" stroke-width="2"/>
+    <line x1="0" y1="15" x2="15" y2="25" stroke="#0f0" stroke-width="2"/>
+    <line x1="0" y1="30" x2="-10" y2="45" stroke="#0f0" stroke-width="2"/>
+    <line x1="0" y1="30" x2="10" y2="45" stroke="#0f0" stroke-width="2"/>
+  </g>
+
+  <!-- Challenge Boxes -->
+  <g transform="translate(50,150)">
+    <rect width="140" height="70" rx="10" fill="#000" stroke="#0f0"/>
+    <text x="70" y="30" fill="#0f0" text-anchor="middle" font-size="14">Quarterly</text>
+    <text x="70" y="50" fill="#0f0" text-anchor="middle" font-size="14">Pressure</text>
+    <!-- Clock Icon -->
+    <circle cx="70" cy="45" r="15" fill="none" stroke="#0f0" stroke-width="1"/>
+    <line x1="70" y1="45" x2="80" y2="45" stroke="#0f0" stroke-width="1"/>
+  </g>
+
+  <g transform="translate(250,50)">
+    <rect width="140" height="70" rx="10" fill="#000" stroke="#0f0"/>
+    <text x="70" y="30" fill="#0f0" text-anchor="middle" font-size="14">Environmental</text>
+    <text x="70" y="50" fill="#0f0" text-anchor="middle" font-size="14">Impact</text>
+    <!-- Earth Icon -->
+    <circle cx="70" cy="45" r="15" fill="none" stroke="#0f0" stroke-width="1"/>
+  </g>
+
+  <g transform="translate(450,150)">
+    <rect width="140" height="70" rx="10" fill="#000" stroke="#0f0"/>
+    <text x="70" y="30" fill="#0f0" text-anchor="middle" font-size="14">Social</text>
+    <text x="70" y="50" fill="#0f0" text-anchor="middle" font-size="14">Responsibility</text>
+    <!-- People Icon -->
+    <path d="M60,45 A10,10 0 0 1 80,45" fill="none" stroke="#0f0" stroke-width="1"/>
+  </g>
+
+  <g transform="translate(650,50)">
+    <rect width="140" height="70" rx="10" fill="#000" stroke="#0f0"/>
+    <text x="70" y="30" fill="#0f0" text-anchor="middle" font-size="14">Economic</text>
+    <text x="70" y="50" fill="#0f0" text-anchor="middle" font-size="14">Viability</text>
+    <!-- Graph Icon -->
+    <polyline points="60,55 70,35 80,45" fill="none" stroke="#0f0" stroke-width="1"/>
+  </g>
+
+  <g transform="translate(350,250)">
+    <rect width="140" height="70" rx="10" fill="#000" stroke="#0f0"/>
+    <text x="70" y="30" fill="#0f0" text-anchor="middle" font-size="14">Organizational</text>
+    <text x="70" y="50" fill="#0f0" text-anchor="middle" font-size="14">Culture</text>
+    <!-- Building Icon -->
+    <rect x="60" y="35" width="20" height="20" fill="none" stroke="#0f0" stroke-width="1"/>
+  </g>
+
+  <!-- Difficulty Indicators -->
+  <g transform="translate(50,500)">
+    <text x="0" y="0" fill="#0f0" font-size="12">Short Term</text>
+    <text x="300" y="0" fill="#0f0" font-size="12">Medium Term</text>
+    <text x="600" y="0" fill="#0f0" font-size="12">Long Term</text>
+  </g>
+
+  <!-- Animated Obstacles -->
+  <circle cx="150" cy="350" r="5" fill="#f00" opacity="0.5">
+    <animate attributeName="cy" values="350;330;350" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="300" cy="300" r="5" fill="#f00" opacity="0.5">
+    <animate attributeName="cy" values="300;280;300" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="450" cy="250" r="5" fill="#f00" opacity="0.5">
+    <animate attributeName="cy" values="250;230;250" dur="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>

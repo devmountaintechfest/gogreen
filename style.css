@@ -1,0 +1,70 @@
+:root {
+    --neon-green: #39ff14;
+    --dark-bg: #0a0a0a;
+    --glow-effect: 0 0 7px var(--neon-green),
+                   0 0 10px var(--neon-green),
+                   0 0 21px var(--neon-green);
+  }
+  
+  .slidev-layout {
+    background-color: var(--dark-bg);
+    color: #fff;
+  }
+  
+  h1, h2, h3 {
+    color: var(--neon-green);
+    text-shadow: var(--glow-effect);
+    font-family: 'Space Mono', monospace;
+  }
+  
+  .slidev-layout.cover h1,
+  .slidev-layout.center h1 {
+    font-size: 3.5em;
+    animation: flicker 1.5s infinite alternate;
+  }
+  
+  .slidev-layout ul li::marker {
+    color: var(--neon-green);
+  }
+  
+  .slidev-layout.two-cols {
+    --slidev-code-background: #161616;
+  }
+  
+  code {
+    border: 1px solid var(--neon-green);
+    box-shadow: var(--glow-effect);
+  }
+  
+  @keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+      text-shadow: var(--glow-effect);
+    }
+    20%, 24%, 55% {
+      text-shadow: none;
+    }
+  }
+  
+  .grid {
+    border: 1px solid var(--neon-green);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: var(--glow-effect);
+  }
+  
+  .v-click {
+    transition: all 0.3s ease;
+  }
+  
+  button, .button {
+    background-color: transparent;
+    border: 1px solid var(--neon-green);
+    color: var(--neon-green);
+    box-shadow: var(--glow-effect);
+    transition: all 0.3s ease;
+  }
+  
+  button:hover, .button:hover {
+    background-color: var(--neon-green);
+    color: var(--dark-bg);
+  }

@@ -1,0 +1,65 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="400"/>
+  
+  <!-- Title -->
+  
+  <!-- Leadership Section -->
+  <g transform="translate(50,80)">
+    <rect width="80" height="120" rx="5" fill="none" stroke="#0f0"/>
+    <text x="40" y="20" fill="#0f0" text-anchor="middle" font-size="10">Leadership</text>
+    
+    <!-- Vision Icon -->
+    <circle cx="40" cy="45" r="10" fill="none" stroke="#0f0">
+      <animate attributeName="r" values="10;12;10" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <text x="40" y="65" fill="#0f0" text-anchor="middle" font-size="8">Vision</text>
+    
+    <!-- Resource Icon -->
+    <rect x="30" y="75" width="20" height="20" fill="none" stroke="#0f0"/>
+    <text x="40" y="110" fill="#0f0" text-anchor="middle" font-size="8">Resources</text>
+  </g>
+
+  <!-- People Section -->
+  <g transform="translate(160,80)">
+    <rect width="80" height="120" rx="5" fill="none" stroke="#0f0"/>
+    <text x="40" y="20" fill="#0f0" text-anchor="middle" font-size="10">People</text>
+    
+    <!-- Skill Icon -->
+    <path d="M30,45 L50,45 M30,50 L50,50 M30,55 L50,55" stroke="#0f0" fill="none"/>
+    <text x="40" y="70" fill="#0f0" text-anchor="middle" font-size="8">Skills</text>
+    
+    <!-- Innovation Icon -->
+    <path d="M30,90 Q40,80 50,90" fill="none" stroke="#0f0"/>
+    <text x="40" y="110" fill="#0f0" text-anchor="middle" font-size="8">Innovation</text>
+  </g>
+
+  <!-- Technology Section -->
+  <g transform="translate(270,80)">
+    <rect width="80" height="120" rx="5" fill="none" stroke="#0f0"/>
+    <text x="40" y="20" fill="#0f0" text-anchor="middle" font-size="10">Technology</text>
+    
+    <!-- Energy Icon -->
+    <path d="M35,45 L45,45 L40,65 Z" fill="none" stroke="#0f0"/>
+    <text x="40" y="80" fill="#0f0" text-anchor="middle" font-size="8">Efficiency</text>
+    
+    <!-- Scale Icon -->
+    <rect x="30" y="90" width="20" height="10" fill="none" stroke="#0f0"/>
+    <text x="40" y="110" fill="#0f0" text-anchor="middle" font-size="8">Scalable</text>
+  </g>
+
+  <!-- Connecting Lines with Animation -->
+  <g>
+    <line x1="130" y1="140" x2="160" y2="140" stroke="#0f0" stroke-dasharray="3,3">
+      <animate attributeName="stroke-dashoffset" values="6;0;6" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="240" y1="140" x2="270" y2="140" stroke="#0f0" stroke-dasharray="3,3">
+      <animate attributeName="stroke-dashoffset" values="6;0;6" dur="2s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- Success Path -->
+  <path d="M50,250 Q200,220 350,250" fill="none" stroke="#0f0" stroke-dasharray="5,5">
+    <animate attributeName="d" values="M50,250 Q200,220 350,250;M50,250 Q200,230 350,250;M50,250 Q200,220 350,250" dur="4s" repeatCount="indefinite"/>
+  </path>
+</svg>

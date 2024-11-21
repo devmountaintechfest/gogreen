@@ -1,0 +1,93 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#1a1a1a"/>
+  
+  <!-- Central Gear -->
+  <g transform="translate(400,300)">
+    <path d="M0,-100 L20,-95 L40,-80 L50,-60 L50,-40 L40,-20 L20,-5 L0,0 L-20,-5 L-40,-20 L-50,-40 L-50,-60 L-40,-80 L-20,-95 Z" 
+          fill="#0f0" opacity="0.2" stroke="#0f0" stroke-width="2">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite"/>
+    </path>
+    <text x="0" y="10" fill="#0f0" text-anchor="middle" font-size="24">Digital
+      <tspan x="0" y="40">Transform</tspan>
+    </text>
+  </g>
+
+  <!-- Connecting Elements -->
+  <!-- Market Competition -->
+  <g transform="translate(150,150)">
+    <rect width="120" height="80" rx="10" fill="#000" stroke="#0f0"/>
+    <text x="60" y="35" fill="#0f0" text-anchor="middle" font-size="14">Market</text>
+    <text x="60" y="55" fill="#0f0" text-anchor="middle" font-size="14">Competition</text>
+    <!-- Stats -->
+    <text x="60" y="75" fill="#0f0" text-anchor="middle" font-size="12">↑40% Growth</text>
+  </g>
+
+  <!-- Business Growth -->
+  <g transform="translate(530,150)">
+    <rect width="120" height="80" rx="10" fill="#000" stroke="#0f0"/>
+    <text x="60" y="35" fill="#0f0" text-anchor="middle" font-size="14">Business</text>
+    <text x="60" y="55" fill="#0f0" text-anchor="middle" font-size="14">Growth</text>
+    <!-- Graph -->
+    <path d="M30,65 L45,45 L60,55 L75,35 L90,25" fill="none" stroke="#0f0" stroke-width="2"/>
+  </g>
+
+  <!-- Operational Efficiency -->
+  <g transform="translate(150,370)">
+    <rect width="120" height="80" rx="10" fill="#000" stroke="#0f0"/>
+    <text x="60" y="35" fill="#0f0" text-anchor="middle" font-size="14">Operational</text>
+    <text x="60" y="55" fill="#0f0" text-anchor="middle" font-size="14">Efficiency</text>
+    <!-- Speedometer -->
+    <path d="M45,65 A15,15 0 0 1 75,65" fill="none" stroke="#0f0" stroke-width="2"/>
+    <line x1="60" y1="65" x2="70" y2="60" stroke="#0f0" stroke-width="2"/>
+  </g>
+
+  <!-- Customer Experience -->
+  <g transform="translate(530,370)">
+    <rect width="120" height="80" rx="10" fill="#000" stroke="#0f0"/>
+    <text x="60" y="35" fill="#0f0" text-anchor="middle" font-size="14">Customer</text>
+    <text x="60" y="55" fill="#0f0" text-anchor="middle" font-size="14">Experience</text>
+    <!-- Users -->
+    <path d="M50,70 A10,10 0 0 1 70,70" fill="none" stroke="#0f0" stroke-width="2"/>
+    <circle cx="60" cy="65" r="5" fill="#0f0"/>
+  </g>
+
+  <!-- Data Insights -->
+  <g transform="translate(400,50)">
+    <rect width="120" height="80" rx="10" fill="#000" stroke="#0f0"/>
+    <text x="60" y="45" fill="#0f0" text-anchor="middle" font-size="14">Data Insights</text>
+    <!-- Graph Dots -->
+    <circle cx="45" cy="60" r="2" fill="#0f0"/>
+    <circle cx="60" cy="65" r="2" fill="#0f0"/>
+    <circle cx="75" cy="55" r="2" fill="#0f0"/>
+  </g>
+
+  <!-- Scalability -->
+  <g transform="translate(400,470)">
+    <rect width="120" height="80" rx="10" fill="#000" stroke="#0f0"/>
+    <text x="60" y="45" fill="#0f0" text-anchor="middle" font-size="14">Scalability</text>
+    <!-- Scale Icon -->
+    <rect x="45" y="55" width="30" height="20" stroke="#0f0" fill="none"/>
+    <rect x="50" y="60" width="20" height="10" fill="#0f0"/>
+  </g>
+
+  <!-- Connecting Lines -->
+  <g stroke="#0f0" stroke-width="1">
+    <line x1="270" y1="190" x2="370" y2="300"/>
+    <line x1="530" y1="190" x2="430" y2="300"/>
+    <line x1="270" y1="410" x2="370" y2="300"/>
+    <line x1="530" y1="410" x2="430" y2="300"/>
+    <line x1="400" y1="130" x2="400" y2="270"/>
+    <line x1="400" y1="470" x2="400" y2="330"/>
+  </g>
+
+  <!-- Animated Particles -->
+  <circle cx="335" cy="245" r="3" fill="#0f0">
+    <animate attributeName="cx" values="335;370" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="245;300" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="465" cy="245" r="3" fill="#0f0">
+    <animate attributeName="cx" values="465;430" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="245;300" dur="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>
